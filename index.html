@@ -26,6 +26,11 @@
   .chart { width:100%; height:380px; }
   .chart-sm { width:100%; height:280px; }
   .ice-banner { background:#fdeaea; border:1px solid #eec; color:#a33; border-radius:8px; padding:10px 14px; margin:12px 0; font-size:14px; }
+  .pool-summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:12px 0; }
+  .ps-item { background:#fbfcfe; border:1px solid var(--line); border-radius:8px; padding:12px 14px; text-align:center; }
+  .ps-num { font-size:26px; font-weight:700; color:var(--main); }
+  .ps-label { font-size:12px; color:var(--sub); margin-top:2px; }
+  .sell-flag { display:inline-block; background:#b91c1c; color:#fff; border-radius:4px; padding:1px 6px; font-size:11px; margin:1px 0; }
   table { width:100%; border-collapse:collapse; font-size:13px; table-layout:fixed; }
   colgroup col.c1{width:34%} colgroup col.c2{width:44%} colgroup col.c3{width:22%}
   th, td { border-bottom:1px solid var(--line); padding:6px 8px; text-align:left; overflow:hidden; }
@@ -94,645 +99,12 @@
 
 <div class="card">
   <h2>今日多头排列股票池（631 只 · 不含ST）</h2>
-  <div class="scrolly">
-  <table>
-    <colgroup><col class="c1"><col class="c2"><col class="c3"></colgroup>
-    <tr><th>代码</th><th>名称</th><th>状态</th></tr>
-<tr><td>sh600048</td><td>保利发展</td><td></td></tr>
-<tr><td>sh600059</td><td>古越龙山</td><td></td></tr>
-<tr><td>sh600127</td><td>金健米业</td><td></td></tr>
-<tr><td>sh600159</td><td>大龙地产</td><td></td></tr>
-<tr><td>sh600186</td><td>莲花控股</td><td></td></tr>
-<tr><td>sh600189</td><td>泉阳泉</td><td></td></tr>
-<tr><td>sh600207</td><td>安彩高科</td><td></td></tr>
-<tr><td>sh600229</td><td>城市传媒</td><td></td></tr>
-<tr><td>sh600237</td><td>铜峰电子</td><td></td></tr>
-<tr><td>sh600246</td><td>万通发展</td><td></td></tr>
-<tr><td>sh600293</td><td>三峡新材</td><td></td></tr>
-<tr><td>sh600325</td><td>华发股份</td><td></td></tr>
-<tr><td>sh600356</td><td>恒丰纸业</td><td></td></tr>
-<tr><td>sh600360</td><td>华微电子</td><td></td></tr>
-<tr><td>sh600371</td><td>万向德农</td><td></td></tr>
-<tr><td>sh600449</td><td>宁夏建材</td><td></td></tr>
-<tr><td>sh600503</td><td>华丽家族</td><td></td></tr>
-<tr><td>sh600577</td><td>精达股份</td><td></td></tr>
-<tr><td>sh600583</td><td>海油工程</td><td></td></tr>
-<tr><td>sh600593</td><td>大连圣亚</td><td></td></tr>
-<tr><td>sh600601</td><td>方正科技</td><td></td></tr>
-<tr><td>sh600606</td><td>绿地控股</td><td></td></tr>
-<tr><td>sh600616</td><td>金枫酒业</td><td></td></tr>
-<tr><td>sh600622</td><td>光大嘉宝</td><td></td></tr>
-<tr><td>sh600626</td><td>申达股份</td><td></td></tr>
-<tr><td>sh600637</td><td>XD东方明</td><td></td></tr>
-<tr><td>sh600639</td><td>浦东金桥</td><td></td></tr>
-<tr><td>sh600640</td><td>国脉文化</td><td></td></tr>
-<tr><td>sh600641</td><td>先导基电</td><td></td></tr>
-<tr><td>sh600671</td><td>天目药业</td><td></td></tr>
-<tr><td>sh600679</td><td>上海凤凰</td><td></td></tr>
-<tr><td>sh600699</td><td>均胜电子</td><td></td></tr>
-<tr><td>sh600707</td><td>彩虹股份</td><td></td></tr>
-<tr><td>sh600769</td><td>祥龙电业</td><td></td></tr>
-<tr><td>sh600770</td><td>综艺股份</td><td></td></tr>
-<tr><td>sh600790</td><td>轻纺城</td><td></td></tr>
-<tr><td>sh600793</td><td>宜宾纸业</td><td></td></tr>
-<tr><td>sh600825</td><td>新华传媒</td><td></td></tr>
-<tr><td>sh600977</td><td>中国电影</td><td></td></tr>
-<tr><td>sh601086</td><td>国芳集团</td><td></td></tr>
-<tr><td>sh601107</td><td>四川成渝</td><td></td></tr>
-<tr><td>sh601199</td><td>江南水务</td><td></td></tr>
-<tr><td>sh601226</td><td>华电科工</td><td></td></tr>
-<tr><td>sh601231</td><td>环旭电子</td><td></td></tr>
-<tr><td>sh601319</td><td>中国人保</td><td></td></tr>
-<tr><td>sh601579</td><td>会稽山</td><td></td></tr>
-<tr><td>sh601811</td><td>新华文轩</td><td></td></tr>
-<tr><td>sh601882</td><td>海天精工</td><td></td></tr>
-<tr><td>sh601900</td><td>南方传媒</td><td></td></tr>
-<tr><td>sh601996</td><td>丰林集团</td><td></td></tr>
-<tr><td>sh601998</td><td>中信银行</td><td></td></tr>
-<tr><td>sh603001</td><td>奥康国际</td><td></td></tr>
-<tr><td>sh603002</td><td>宏昌电子</td><td></td></tr>
-<tr><td>sh603010</td><td>万盛股份</td><td></td></tr>
-<tr><td>sh603020</td><td>爱普股份</td><td></td></tr>
-<tr><td>sh603048</td><td>浙江黎明</td><td></td></tr>
-<tr><td>sh603051</td><td>鹿山新材</td><td></td></tr>
-<tr><td>sh603112</td><td>华翔股份</td><td></td></tr>
-<tr><td>sh603119</td><td>浙江荣泰</td><td></td></tr>
-<tr><td>sh603120</td><td>肯特催化</td><td></td></tr>
-<tr><td>sh603122</td><td>合富中国</td><td></td></tr>
-<tr><td>sh603124</td><td>江南新材</td><td></td></tr>
-<tr><td>sh603150</td><td>万朗磁塑</td><td></td></tr>
-<tr><td>sh603155</td><td>新亚强</td><td></td></tr>
-<tr><td>sh603156</td><td>XD养元饮</td><td></td></tr>
-<tr><td>sh603160</td><td>汇顶科技</td><td></td></tr>
-<tr><td>sh603163</td><td>圣晖集成</td><td></td></tr>
-<tr><td>sh603175</td><td>超颖电子</td><td></td></tr>
-<tr><td>sh603192</td><td>汇得科技</td><td></td></tr>
-<tr><td>sh603203</td><td>快克智能</td><td></td></tr>
-<tr><td>sh603212</td><td>赛伍技术</td><td></td></tr>
-<tr><td>sh603221</td><td>爱丽家居</td><td></td></tr>
-<tr><td>sh603230</td><td>内蒙新华</td><td></td></tr>
-<tr><td>sh603231</td><td>索宝蛋白</td><td></td></tr>
-<tr><td>sh603236</td><td>移远通信</td><td></td></tr>
-<tr><td>sh603256</td><td>宏和科技</td><td></td></tr>
-<tr><td>sh603258</td><td>电魂网络</td><td></td></tr>
-<tr><td>sh603259</td><td>药明康德</td><td></td></tr>
-<tr><td>sh603266</td><td>天龙股份</td><td></td></tr>
-<tr><td>sh603267</td><td>鸿远电子</td><td></td></tr>
-<tr><td>sh603268</td><td>松发股份</td><td></td></tr>
-<tr><td>sh603269</td><td>海鸥股份</td><td></td></tr>
-<tr><td>sh603270</td><td>金帝股份</td><td></td></tr>
-<tr><td>sh603276</td><td>恒兴新材</td><td></td></tr>
-<tr><td>sh603285</td><td>键邦股份</td><td></td></tr>
-<tr><td>sh603289</td><td>泰瑞机器</td><td></td></tr>
-<tr><td>sh603303</td><td>得邦照明</td><td></td></tr>
-<tr><td>sh603306</td><td>华懋科技</td><td></td></tr>
-<tr><td>sh603310</td><td>巍华新材</td><td></td></tr>
-<tr><td>sh603316</td><td>诚邦股份</td><td></td></tr>
-<tr><td>sh603319</td><td>美湖股份</td><td></td></tr>
-<tr><td>sh603320</td><td>迪贝电气</td><td></td></tr>
-<tr><td>sh603328</td><td>依顿电子</td><td></td></tr>
-<tr><td>sh603336</td><td>宏辉果蔬</td><td></td></tr>
-<tr><td>sh603355</td><td>莱克电气</td><td></td></tr>
-<tr><td>sh603386</td><td>骏亚科技</td><td></td></tr>
-<tr><td>sh603387</td><td>基蛋生物</td><td></td></tr>
-<tr><td>sh603407</td><td>长裕集团</td><td></td></tr>
-<tr><td>sh603489</td><td>八方股份</td><td></td></tr>
-<tr><td>sh603507</td><td>振江股份</td><td></td></tr>
-<tr><td>sh603528</td><td>多伦科技</td><td></td></tr>
-<tr><td>sh603583</td><td>捷昌驱动</td><td></td></tr>
-<tr><td>sh603588</td><td>高能环境</td><td></td></tr>
-<tr><td>sh603626</td><td>科森科技</td><td></td></tr>
-<tr><td>sh603657</td><td>春光科技</td><td></td></tr>
-<tr><td>sh603661</td><td>恒林股份</td><td></td></tr>
-<tr><td>sh603663</td><td>三祥新材</td><td></td></tr>
-<tr><td>sh603666</td><td>亿嘉和</td><td></td></tr>
-<tr><td>sh603669</td><td>灵康药业</td><td></td></tr>
-<tr><td>sh603677</td><td>奇精机械</td><td></td></tr>
-<tr><td>sh603681</td><td>永冠新材</td><td></td></tr>
-<tr><td>sh603713</td><td>密尔克卫</td><td></td></tr>
-<tr><td>sh603790</td><td>雅运股份</td><td></td></tr>
-<tr><td>sh603803</td><td>瑞斯康达</td><td></td></tr>
-<tr><td>sh603859</td><td>能科科技</td><td></td></tr>
-<tr><td>sh603867</td><td>新化股份</td><td></td></tr>
-<tr><td>sh603882</td><td>金域医学</td><td></td></tr>
-<tr><td>sh603917</td><td>合力科技</td><td></td></tr>
-<tr><td>sh603920</td><td>世运电路</td><td></td></tr>
-<tr><td>sh603936</td><td>博敏电子</td><td></td></tr>
-<tr><td>sh603955</td><td>大千生态</td><td></td></tr>
-<tr><td>sh603956</td><td>威派格</td><td></td></tr>
-<tr><td>sh603960</td><td>克来机电</td><td></td></tr>
-<tr><td>sh603978</td><td>深圳新星</td><td></td></tr>
-<tr><td>sh603997</td><td>继峰股份</td><td></td></tr>
-<tr><td>sh605003</td><td>众望布艺</td><td></td></tr>
-<tr><td>sh605008</td><td>长鸿高科</td><td></td></tr>
-<tr><td>sh605058</td><td>澳弘电子</td><td></td></tr>
-<tr><td>sh605088</td><td>冠盛股份</td><td></td></tr>
-<tr><td>sh605118</td><td>力鼎光电</td><td></td></tr>
-<tr><td>sh605168</td><td>三人行</td><td></td></tr>
-<tr><td>sh605169</td><td>洪通燃气</td><td></td></tr>
-<tr><td>sh605180</td><td>华生科技</td><td></td></tr>
-<tr><td>sh605183</td><td>确成股份</td><td></td></tr>
-<tr><td>sh605208</td><td>永茂泰</td><td></td></tr>
-<tr><td>sh605258</td><td>协和电子</td><td></td></tr>
-<tr><td>sh605358</td><td>立昂微</td><td></td></tr>
-<tr><td>sh605366</td><td>宏柏新材</td><td></td></tr>
-<tr><td>sh605369</td><td>拱东医疗</td><td></td></tr>
-<tr><td>sh605399</td><td>晨光新材</td><td></td></tr>
-<tr><td>sh605488</td><td>福莱新材</td><td></td></tr>
-<tr><td>sh605507</td><td>国邦医药</td><td></td></tr>
-<tr><td>sz000002</td><td>万  科Ａ</td><td></td></tr>
-<tr><td>sz000011</td><td>深物业A</td><td></td></tr>
-<tr><td>sz000020</td><td>深华发Ａ</td><td></td></tr>
-<tr><td>sz000055</td><td>方大集团</td><td></td></tr>
-<tr><td>sz000498</td><td>山东路桥</td><td></td></tr>
-<tr><td>sz000504</td><td>南华生物</td><td></td></tr>
-<tr><td>sz000509</td><td>华塑控股</td><td></td></tr>
-<tr><td>sz000510</td><td>新金路</td><td></td></tr>
-<tr><td>sz000532</td><td>华金资本</td><td></td></tr>
-<tr><td>sz000538</td><td>云南白药</td><td></td></tr>
-<tr><td>sz000571</td><td>新大洲A</td><td></td></tr>
-<tr><td>sz000607</td><td>华媒控股</td><td></td></tr>
-<tr><td>sz000628</td><td>高新发展</td><td></td></tr>
-<tr><td>sz000672</td><td>上峰材料</td><td></td></tr>
-<tr><td>sz000731</td><td>四川美丰</td><td></td></tr>
-<tr><td>sz000733</td><td>振华科技</td><td></td></tr>
-<tr><td>sz000739</td><td>普洛药业</td><td></td></tr>
-<tr><td>sz000756</td><td>新华制药</td><td></td></tr>
-<tr><td>sz000782</td><td>恒申新材</td><td></td></tr>
-<tr><td>sz000797</td><td>中国武夷</td><td></td></tr>
-<tr><td>sz000823</td><td>超声电子</td><td></td></tr>
-<tr><td>sz000868</td><td>安凯客车</td><td></td></tr>
-<tr><td>sz000869</td><td>张  裕Ａ</td><td></td></tr>
-<tr><td>sz000910</td><td>大亚圣象</td><td></td></tr>
-<tr><td>sz000962</td><td>东方钽业</td><td></td></tr>
-<tr><td>sz001201</td><td>东瑞股份</td><td></td></tr>
-<tr><td>sz001207</td><td>联科科技</td><td></td></tr>
-<tr><td>sz001211</td><td>双枪科技</td><td></td></tr>
-<tr><td>sz001212</td><td>中旗新材</td><td></td></tr>
-<tr><td>sz001216</td><td>华瓷股份</td><td></td></tr>
-<tr><td>sz001222</td><td>源飞宠物</td><td></td></tr>
-<tr><td>sz001228</td><td>永泰运</td><td></td></tr>
-<tr><td>sz001232</td><td>嘉立创</td><td></td></tr>
-<tr><td>sz001234</td><td>泰慕士</td><td></td></tr>
-<tr><td>sz001287</td><td>中电港</td><td></td></tr>
-<tr><td>sz001288</td><td>运机集团</td><td></td></tr>
-<tr><td>sz001324</td><td>长青科技</td><td></td></tr>
-<tr><td>sz001326</td><td>联域股份</td><td></td></tr>
-<tr><td>sz001359</td><td>平安电工</td><td></td></tr>
-<tr><td>sz001368</td><td>通达创智</td><td></td></tr>
-<tr><td>sz001378</td><td>德冠新材</td><td></td></tr>
-<tr><td>sz001380</td><td>华纬科技</td><td></td></tr>
-<tr><td>sz001389</td><td>广合科技</td><td></td></tr>
-<tr><td>sz001979</td><td>招商蛇口</td><td></td></tr>
-<tr><td>sz002005</td><td>德豪润达</td><td></td></tr>
-<tr><td>sz002046</td><td>国机精工</td><td></td></tr>
-<tr><td>sz002051</td><td>中工国际</td><td></td></tr>
-<tr><td>sz002058</td><td>紫竹高科</td><td></td></tr>
-<tr><td>sz002062</td><td>宏润建设</td><td></td></tr>
-<tr><td>sz002093</td><td>国脉科技</td><td></td></tr>
-<tr><td>sz002098</td><td>浔兴股份</td><td></td></tr>
-<tr><td>sz002099</td><td>海翔药业</td><td></td></tr>
-<tr><td>sz002106</td><td>莱宝高科</td><td></td></tr>
-<tr><td>sz002134</td><td>天津普林</td><td></td></tr>
-<tr><td>sz002138</td><td>顺络电子</td><td></td></tr>
-<tr><td>sz002141</td><td>贤丰控股</td><td></td></tr>
-<tr><td>sz002145</td><td>钛能化学</td><td></td></tr>
-<tr><td>sz002151</td><td>北斗星通</td><td></td></tr>
-<tr><td>sz002174</td><td>游族网络</td><td></td></tr>
-<tr><td>sz002178</td><td>延华智能</td><td></td></tr>
-<tr><td>sz002185</td><td>华天科技</td><td></td></tr>
-<tr><td>sz002214</td><td>大立科技</td><td></td></tr>
-<tr><td>sz002222</td><td>福晶科技</td><td></td></tr>
-<tr><td>sz002242</td><td>九阳股份</td><td></td></tr>
-<tr><td>sz002246</td><td>北化股份</td><td></td></tr>
-<tr><td>sz002259</td><td>升达林业</td><td></td></tr>
-<tr><td>sz002268</td><td>电科网安</td><td></td></tr>
-<tr><td>sz002285</td><td>世联行</td><td></td></tr>
-<tr><td>sz002290</td><td>禾盛新材</td><td></td></tr>
-<tr><td>sz002296</td><td>辉煌科技</td><td></td></tr>
-<tr><td>sz002301</td><td>齐心集团</td><td></td></tr>
-<tr><td>sz002303</td><td>美盈森</td><td></td></tr>
-<tr><td>sz002314</td><td>南山控股</td><td></td></tr>
-<tr><td>sz002367</td><td>康力电梯</td><td></td></tr>
-<tr><td>sz002383</td><td>合众思壮</td><td></td></tr>
-<tr><td>sz002386</td><td>天原股份</td><td></td></tr>
-<tr><td>sz002388</td><td>新亚制程</td><td></td></tr>
-<tr><td>sz002434</td><td>万里扬</td><td></td></tr>
-<tr><td>sz002436</td><td>兴森科技</td><td></td></tr>
-<tr><td>sz002439</td><td>启明星辰</td><td></td></tr>
-<tr><td>sz002443</td><td>金洲管道</td><td></td></tr>
-<tr><td>sz002472</td><td>双环传动</td><td></td></tr>
-<tr><td>sz002482</td><td>广田集团</td><td></td></tr>
-<tr><td>sz002518</td><td>科士达</td><td></td></tr>
-<tr><td>sz002577</td><td>雷柏科技</td><td></td></tr>
-<tr><td>sz002612</td><td>朗姿股份</td><td></td></tr>
-<tr><td>sz002614</td><td>奥佳华</td><td></td></tr>
-<tr><td>sz002623</td><td>亚玛顿</td><td></td></tr>
-<tr><td>sz002631</td><td>德尔未来</td><td></td></tr>
-<tr><td>sz002632</td><td>道明光学</td><td></td></tr>
-<tr><td>sz002636</td><td>金安国纪</td><td></td></tr>
-<tr><td>sz002705</td><td>新宝股份</td><td></td></tr>
-<tr><td>sz002713</td><td>东易日盛</td><td></td></tr>
-<tr><td>sz002728</td><td>特一药业</td><td></td></tr>
-<tr><td>sz002734</td><td>利民股份</td><td></td></tr>
-<tr><td>sz002741</td><td>光华科技</td><td></td></tr>
-<tr><td>sz002745</td><td>木林森</td><td></td></tr>
-<tr><td>sz002757</td><td>南兴股份</td><td></td></tr>
-<tr><td>sz002768</td><td>国恩股份</td><td></td></tr>
-<tr><td>sz002774</td><td>快意电梯</td><td></td></tr>
-<tr><td>sz002779</td><td>中坚科技</td><td></td></tr>
-<tr><td>sz002787</td><td>华源控股</td><td></td></tr>
-<tr><td>sz002792</td><td>通宇通讯</td><td></td></tr>
-<tr><td>sz002795</td><td>永和智控</td><td></td></tr>
-<tr><td>sz002806</td><td>华锋股份</td><td></td></tr>
-<tr><td>sz002811</td><td>郑中设计</td><td></td></tr>
-<tr><td>sz002815</td><td>崇达技术</td><td></td></tr>
-<tr><td>sz002821</td><td>凯莱英</td><td></td></tr>
-<tr><td>sz002827</td><td>高争民爆</td><td></td></tr>
-<tr><td>sz002845</td><td>同兴达</td><td></td></tr>
-<tr><td>sz002848</td><td>高斯贝尔</td><td></td></tr>
-<tr><td>sz002849</td><td>威星智能</td><td></td></tr>
-<tr><td>sz002876</td><td>三利谱</td><td></td></tr>
-<tr><td>sz002899</td><td>英派斯</td><td></td></tr>
-<tr><td>sz002905</td><td>金逸影视</td><td></td></tr>
-<tr><td>sz002913</td><td>奥士康</td><td></td></tr>
-<tr><td>sz002916</td><td>深南电路</td><td></td></tr>
-<tr><td>sz002928</td><td>华夏航空</td><td></td></tr>
-<tr><td>sz002957</td><td>科瑞技术</td><td></td></tr>
-<tr><td>sz002962</td><td>五方光电</td><td></td></tr>
-<tr><td>sz002963</td><td>豪尔赛</td><td></td></tr>
-<tr><td>sz002972</td><td>科安达</td><td></td></tr>
-<tr><td>sz002975</td><td>博杰股份</td><td></td></tr>
-<tr><td>sz002983</td><td>芯瑞达</td><td></td></tr>
-<tr><td>sz002988</td><td>豪美新材</td><td></td></tr>
-<tr><td>sz002989</td><td>中天精装</td><td></td></tr>
-<tr><td>sz002990</td><td>盛视科技</td><td></td></tr>
-<tr><td>sz003001</td><td>中岩大地</td><td></td></tr>
-<tr><td>sz003006</td><td>百亚股份</td><td></td></tr>
-<tr><td>sz003007</td><td>直真科技</td><td></td></tr>
-<tr><td>sz003016</td><td>欣贺股份</td><td></td></tr>
-<tr><td>sz003030</td><td>祖名股份</td><td></td></tr>
-<tr><td>sz003033</td><td>征和工业</td><td></td></tr>
-<tr><td>sz003041</td><td>真爱美家</td><td></td></tr>
-<tr><td>sz300049</td><td>福瑞医科</td><td></td></tr>
-<tr><td>sz300050</td><td>世纪鼎利</td><td></td></tr>
-<tr><td>sz300077</td><td>国民技术</td><td></td></tr>
-<tr><td>sz300088</td><td>长信科技</td><td></td></tr>
-<tr><td>sz300110</td><td>华仁药业</td><td></td></tr>
-<tr><td>sz300112</td><td>万讯自控</td><td></td></tr>
-<tr><td>sz300145</td><td>南方泵业</td><td></td></tr>
-<tr><td>sz300151</td><td>昌红科技</td><td></td></tr>
-<tr><td>sz300192</td><td>科德教育</td><td></td></tr>
-<tr><td>sz300199</td><td>翰宇药业</td><td></td></tr>
-<tr><td>sz300223</td><td>君正股份</td><td></td></tr>
-<tr><td>sz300235</td><td>方直科技</td><td></td></tr>
-<tr><td>sz300243</td><td>瑞丰高材</td><td></td></tr>
-<tr><td>sz300244</td><td>迪安诊断</td><td></td></tr>
-<tr><td>sz300257</td><td>开山股份</td><td></td></tr>
-<tr><td>sz300260</td><td>新莱应材</td><td></td></tr>
-<tr><td>sz300277</td><td>汽轮科技</td><td></td></tr>
-<tr><td>sz300281</td><td>金明精机</td><td></td></tr>
-<tr><td>sz300291</td><td>百纳千成</td><td></td></tr>
-<tr><td>sz300311</td><td>任子行</td><td></td></tr>
-<tr><td>sz300327</td><td>中颖电子</td><td></td></tr>
-<tr><td>sz300347</td><td>泰格医药</td><td></td></tr>
-<tr><td>sz300363</td><td>博腾股份</td><td></td></tr>
-<tr><td>sz300369</td><td>绿盟科技</td><td></td></tr>
-<tr><td>sz300398</td><td>飞凯材料</td><td></td></tr>
-<tr><td>sz300401</td><td>花园生物</td><td></td></tr>
-<tr><td>sz300404</td><td>博济医药</td><td></td></tr>
-<tr><td>sz300426</td><td>华智数媒</td><td></td></tr>
-<tr><td>sz300429</td><td>强力新材</td><td></td></tr>
-<tr><td>sz300439</td><td>美康生物</td><td></td></tr>
-<tr><td>sz300454</td><td>深信服</td><td></td></tr>
-<tr><td>sz300464</td><td>星徽股份</td><td></td></tr>
-<tr><td>sz300473</td><td>德尔股份</td><td></td></tr>
-<tr><td>sz300478</td><td>杭州高新</td><td></td></tr>
-<tr><td>sz300487</td><td>蓝晓科技</td><td></td></tr>
-<tr><td>sz300488</td><td>恒锋工具</td><td></td></tr>
-<tr><td>sz300491</td><td>通合科技</td><td></td></tr>
-<tr><td>sz300502</td><td>新易盛</td><td></td></tr>
-<tr><td>sz300504</td><td>天邑股份</td><td></td></tr>
-<tr><td>sz300516</td><td>久之洋</td><td></td></tr>
-<tr><td>sz300517</td><td>海波重科</td><td></td></tr>
-<tr><td>sz300522</td><td>世名科技</td><td></td></tr>
-<tr><td>sz300523</td><td>辰安科技</td><td></td></tr>
-<tr><td>sz300553</td><td>集智股份</td><td></td></tr>
-<tr><td>sz300554</td><td>三超新材</td><td></td></tr>
-<tr><td>sz300559</td><td>佳发教育</td><td></td></tr>
-<tr><td>sz300568</td><td>星源材质</td><td></td></tr>
-<tr><td>sz300570</td><td>太辰光</td><td></td></tr>
-<tr><td>sz300590</td><td>移为通信</td><td></td></tr>
-<tr><td>sz300593</td><td>新雷能</td><td></td></tr>
-<tr><td>sz300599</td><td>雄塑科技</td><td></td></tr>
-<tr><td>sz300611</td><td>美力科技</td><td></td></tr>
-<tr><td>sz300623</td><td>捷捷微电</td><td></td></tr>
-<tr><td>sz300626</td><td>华瑞股份</td><td></td></tr>
-<tr><td>sz300632</td><td>光莆股份</td><td></td></tr>
-<tr><td>sz300647</td><td>超频三</td><td></td></tr>
-<tr><td>sz300650</td><td>太龙股份</td><td></td></tr>
-<tr><td>sz300659</td><td>中孚信息</td><td></td></tr>
-<tr><td>sz300661</td><td>圣邦股份</td><td></td></tr>
-<tr><td>sz300667</td><td>必创科技</td><td></td></tr>
-<tr><td>sz300671</td><td>富满微</td><td></td></tr>
-<tr><td>sz300672</td><td>国科微</td><td></td></tr>
-<tr><td>sz300673</td><td>佩蒂股份</td><td></td></tr>
-<tr><td>sz300684</td><td>中石科技</td><td></td></tr>
-<tr><td>sz300685</td><td>艾德生物</td><td></td></tr>
-<tr><td>sz300689</td><td>澄天伟业</td><td></td></tr>
-<tr><td>sz300691</td><td>联合光电</td><td></td></tr>
-<tr><td>sz300708</td><td>聚灿光电</td><td></td></tr>
-<tr><td>sz300725</td><td>药石科技</td><td></td></tr>
-<tr><td>sz300726</td><td>宏达电子</td><td></td></tr>
-<tr><td>sz300727</td><td>润禾材料</td><td></td></tr>
-<tr><td>sz300729</td><td>乐歌股份</td><td></td></tr>
-<tr><td>sz300731</td><td>科创新源</td><td></td></tr>
-<tr><td>sz300736</td><td>百邦科技</td><td></td></tr>
-<tr><td>sz300739</td><td>明阳电路</td><td></td></tr>
-<tr><td>sz300741</td><td>华宝股份</td><td></td></tr>
-<tr><td>sz300752</td><td>隆利科技</td><td></td></tr>
-<tr><td>sz300756</td><td>金马游乐</td><td></td></tr>
-<tr><td>sz300776</td><td>帝尔激光</td><td></td></tr>
-<tr><td>sz300787</td><td>海能实业</td><td></td></tr>
-<tr><td>sz300811</td><td>铂科新材</td><td></td></tr>
-<tr><td>sz300812</td><td>易天股份</td><td></td></tr>
-<tr><td>sz300813</td><td>泰林生物</td><td></td></tr>
-<tr><td>sz300819</td><td>聚杰微纤</td><td></td></tr>
-<tr><td>sz300820</td><td>英杰电气</td><td></td></tr>
-<tr><td>sz300826</td><td>测绘股份</td><td></td></tr>
-<tr><td>sz300829</td><td>金丹科技</td><td></td></tr>
-<tr><td>sz300835</td><td>龙磁科技</td><td></td></tr>
-<tr><td>sz300836</td><td>佰奥智能</td><td></td></tr>
-<tr><td>sz300845</td><td>捷安高科</td><td></td></tr>
-<tr><td>sz300852</td><td>四会富仕</td><td></td></tr>
-<tr><td>sz300853</td><td>申昊科技</td><td></td></tr>
-<tr><td>sz300862</td><td>蓝盾光电</td><td></td></tr>
-<tr><td>sz300895</td><td>铜牛信息</td><td></td></tr>
-<tr><td>sz300902</td><td>国安达</td><td></td></tr>
-<tr><td>sz300907</td><td>康平科技</td><td></td></tr>
-<tr><td>sz300909</td><td>汇创达</td><td></td></tr>
-<tr><td>sz300911</td><td>亿田智能</td><td></td></tr>
-<tr><td>sz300938</td><td>信测标准</td><td></td></tr>
-<tr><td>sz300939</td><td>秋田微</td><td></td></tr>
-<tr><td>sz300950</td><td>德固特</td><td></td></tr>
-<tr><td>sz300951</td><td>博硕科技</td><td></td></tr>
-<tr><td>sz300964</td><td>本川智能</td><td></td></tr>
-<tr><td>sz300976</td><td>达瑞电子</td><td></td></tr>
-<tr><td>sz300981</td><td>中红医疗</td><td></td></tr>
-<tr><td>sz300988</td><td>津荣天宇</td><td></td></tr>
-<tr><td>sz300989</td><td>蕾奥规划</td><td></td></tr>
-<tr><td>sz301008</td><td>宏昌科技</td><td></td></tr>
-<tr><td>sz301015</td><td>百洋医药</td><td></td></tr>
-<tr><td>sz301041</td><td>金百泽</td><td></td></tr>
-<tr><td>sz301046</td><td>能辉科技</td><td></td></tr>
-<tr><td>sz301047</td><td>义翘神州</td><td></td></tr>
-<tr><td>sz301055</td><td>张小泉</td><td></td></tr>
-<tr><td>sz301059</td><td>金三江</td><td></td></tr>
-<tr><td>sz301061</td><td>匠心家居</td><td></td></tr>
-<tr><td>sz301067</td><td>显盈科技</td><td></td></tr>
-<tr><td>sz301070</td><td>开勒股份</td><td></td></tr>
-<tr><td>sz301072</td><td>中捷精工</td><td></td></tr>
-<tr><td>sz301080</td><td>百普赛斯</td><td></td></tr>
-<tr><td>sz301085</td><td>亚康股份</td><td></td></tr>
-<tr><td>sz301086</td><td>鸿富瀚</td><td></td></tr>
-<tr><td>sz301087</td><td>可孚医疗</td><td></td></tr>
-<tr><td>sz301095</td><td>广立微</td><td></td></tr>
-<tr><td>sz301108</td><td>洁雅股份</td><td></td></tr>
-<tr><td>sz301115</td><td>联检科技</td><td></td></tr>
-<tr><td>sz301122</td><td>采纳股份</td><td></td></tr>
-<tr><td>sz301132</td><td>满坤科技</td><td></td></tr>
-<tr><td>sz301149</td><td>隆华新材</td><td></td></tr>
-<tr><td>sz301150</td><td>中一科技</td><td></td></tr>
-<tr><td>sz301151</td><td>冠龙节能</td><td></td></tr>
-<tr><td>sz301155</td><td>海力风电</td><td></td></tr>
-<tr><td>sz301157</td><td>华塑科技</td><td></td></tr>
-<tr><td>sz301161</td><td>唯万密封</td><td></td></tr>
-<tr><td>sz301172</td><td>君逸数码</td><td></td></tr>
-<tr><td>sz301176</td><td>逸豪新材</td><td></td></tr>
-<tr><td>sz301179</td><td>泽宇智能</td><td></td></tr>
-<tr><td>sz301183</td><td>东田微</td><td></td></tr>
-<tr><td>sz301189</td><td>奥尼电子</td><td></td></tr>
-<tr><td>sz301193</td><td>家联科技</td><td></td></tr>
-<tr><td>sz301202</td><td>朗威股份</td><td></td></tr>
-<tr><td>sz301207</td><td>华兰疫苗</td><td></td></tr>
-<tr><td>sz301209</td><td>联合化学</td><td></td></tr>
-<tr><td>sz301210</td><td>金杨精密</td><td></td></tr>
-<tr><td>sz301213</td><td>观想科技</td><td></td></tr>
-<tr><td>sz301217</td><td>铜冠铜箔</td><td></td></tr>
-<tr><td>sz301220</td><td>亚香股份</td><td></td></tr>
-<tr><td>sz301222</td><td>浙江恒威</td><td></td></tr>
-<tr><td>sz301223</td><td>中荣股份</td><td></td></tr>
-<tr><td>sz301226</td><td>祥明智能</td><td></td></tr>
-<tr><td>sz301230</td><td>泓博医药</td><td></td></tr>
-<tr><td>sz301234</td><td>五洲医疗</td><td></td></tr>
-<tr><td>sz301251</td><td>威尔高</td><td></td></tr>
-<tr><td>sz301252</td><td>同星科技</td><td></td></tr>
-<tr><td>sz301263</td><td>泰恩康</td><td></td></tr>
-<tr><td>sz301266</td><td>宇邦新材</td><td></td></tr>
-<tr><td>sz301270</td><td>汉仪股份</td><td></td></tr>
-<tr><td>sz301279</td><td>金道科技</td><td></td></tr>
-<tr><td>sz301282</td><td>金禄电子</td><td></td></tr>
-<tr><td>sz301283</td><td>聚胶股份</td><td></td></tr>
-<tr><td>sz301285</td><td>鸿日达</td><td></td></tr>
-<tr><td>sz301299</td><td>卓创资讯</td><td></td></tr>
-<tr><td>sz301311</td><td>昆船智能</td><td></td></tr>
-<tr><td>sz301312</td><td>智立方</td><td></td></tr>
-<tr><td>sz301321</td><td>翰博高新</td><td></td></tr>
-<tr><td>sz301323</td><td>新莱福</td><td></td></tr>
-<tr><td>sz301329</td><td>信音电子</td><td></td></tr>
-<tr><td>sz301333</td><td>诺思格</td><td></td></tr>
-<tr><td>sz301336</td><td>趣睡科技</td><td></td></tr>
-<tr><td>sz301338</td><td>凯格精机</td><td></td></tr>
-<tr><td>sz301339</td><td>通行宝</td><td></td></tr>
-<tr><td>sz301348</td><td>蓝箭电子</td><td></td></tr>
-<tr><td>sz301349</td><td>信德新材</td><td></td></tr>
-<tr><td>sz301355</td><td>南王科技</td><td></td></tr>
-<tr><td>sz301360</td><td>荣旗科技</td><td></td></tr>
-<tr><td>sz301362</td><td>民爆光电</td><td></td></tr>
-<tr><td>sz301366</td><td>一博科技</td><td></td></tr>
-<tr><td>sz301372</td><td>科净源</td><td></td></tr>
-<tr><td>sz301380</td><td>挖金客</td><td></td></tr>
-<tr><td>sz301393</td><td>昊帆生物</td><td></td></tr>
-<tr><td>sz301398</td><td>星源卓镁</td><td></td></tr>
-<tr><td>sz301419</td><td>阿莱德</td><td></td></tr>
-<tr><td>sz301446</td><td>福事特</td><td></td></tr>
-<tr><td>sz301448</td><td>开创电气</td><td></td></tr>
-<tr><td>sz301479</td><td>弘景光电</td><td></td></tr>
-<tr><td>sz301486</td><td>致尚科技</td><td></td></tr>
-<tr><td>sz301511</td><td>德福科技</td><td></td></tr>
-<tr><td>sz301516</td><td>中远通</td><td></td></tr>
-<tr><td>sz301520</td><td>万邦医药</td><td></td></tr>
-<tr><td>sz301528</td><td>多浦乐</td><td></td></tr>
-<tr><td>sz301529</td><td>福赛科技</td><td></td></tr>
-<tr><td>sz301555</td><td>惠柏新材</td><td></td></tr>
-<tr><td>sz301566</td><td>达利凯普</td><td></td></tr>
-<tr><td>sz301568</td><td>思泰克</td><td></td></tr>
-<tr><td>sz301583</td><td>托伦斯</td><td></td></tr>
-<tr><td>sz301589</td><td>诺瓦星云</td><td></td></tr>
-<tr><td>sz301592</td><td>六九一二</td><td></td></tr>
-<tr><td>sz301595</td><td>太力科技</td><td></td></tr>
-<tr><td>sz301608</td><td>博实结</td><td></td></tr>
-<tr><td>sz301626</td><td>苏州天脉</td><td></td></tr>
-<tr><td>sz301678</td><td>新恒汇</td><td></td></tr>
-<tr><td>sz301682</td><td>宏明电子</td><td></td></tr>
-<tr><td>sz301687</td><td>新广益</td><td></td></tr>
-<tr><td>sh600007</td><td>中国国贸</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600110</td><td>诺德股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600153</td><td>建发股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600172</td><td>黄河旋风</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600206</td><td>有研新材</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600316</td><td>洪都航空</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600330</td><td>天通股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600391</td><td>航发科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600482</td><td>中国动力</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600552</td><td>凯盛科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600642</td><td>申能股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600648</td><td>外高桥</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600667</td><td>太极实业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600675</td><td>中华企业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600682</td><td>南京新百</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600743</td><td>华远控股</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600802</td><td>福建水泥</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600812</td><td>华北制药</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600845</td><td>宝信软件</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh600887</td><td>伊利股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh601155</td><td>新城控股</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh601208</td><td>东材科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh601512</td><td>中新集团</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh601567</td><td>三星电气</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603067</td><td>振华股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603068</td><td>博通集成</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603075</td><td>热威股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603125</td><td>常青科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603151</td><td>邦基科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603232</td><td>格尔软件</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603235</td><td>天新药业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603297</td><td>永新光学</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603345</td><td>安井食品</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603351</td><td>威尔药业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603373</td><td>安邦护卫</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603400</td><td>华之杰</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603456</td><td>九洲药业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603636</td><td>南威软件</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603688</td><td>石英股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603725</td><td>天安新材</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603773</td><td>沃格光电</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603826</td><td>坤彩科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603893</td><td>瑞芯微</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603903</td><td>中持股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603928</td><td>兴业股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603931</td><td>格林达</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh603938</td><td>三孚股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh605100</td><td>华丰股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh605111</td><td>新洁能</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh605123</td><td>派克新材</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh605162</td><td>新中港</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh605228</td><td>神通科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh605378</td><td>野马电池</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sh605589</td><td>圣泉集团</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz000636</td><td>风华高科</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz000697</td><td>炼石航空</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz000719</td><td>中原传媒</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz000972</td><td>中基健康</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz001209</td><td>洪兴股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz001215</td><td>千味央厨</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz001266</td><td>宏英智能</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz001317</td><td>三羊马</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002022</td><td>科华生物</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002119</td><td>康强电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002140</td><td>东华科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002223</td><td>鱼跃医疗</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002338</td><td>奥普光电</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002343</td><td>慈文传媒</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002349</td><td>精华制药</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002491</td><td>通鼎互联</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002492</td><td>恒基达鑫</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002516</td><td>旷达科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002564</td><td>天沃科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002597</td><td>金禾实业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002669</td><td>康达新材</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002708</td><td>光洋股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002819</td><td>东方中科</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002859</td><td>洁美科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002862</td><td>实丰文化</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002935</td><td>天奥电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz002992</td><td>宝明科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz003015</td><td>日久光电</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz003036</td><td>泰坦股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300042</td><td>朗科科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300061</td><td>旗天科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300097</td><td>智云股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300154</td><td>瑞凌股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300171</td><td>东富龙</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300209</td><td>行云科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300221</td><td>银禧科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300246</td><td>宝莱特</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300283</td><td>温州宏丰</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300285</td><td>国瓷材料</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300305</td><td>裕兴股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300321</td><td>同大股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300346</td><td>南大光电</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300408</td><td>三环集团</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300410</td><td>正业科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300434</td><td>金石亚药</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300445</td><td>康斯特</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300480</td><td>光力科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300548</td><td>长芯博创</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300550</td><td>和仁科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300576</td><td>容大感光</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300586</td><td>美联新材</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300613</td><td>富瀚微</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300634</td><td>彩讯股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300649</td><td>杭州园林</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300655</td><td>晶瑞电材</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300676</td><td>华大基因</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300695</td><td>兆丰股份</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300706</td><td>阿石创</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300759</td><td>康龙化成</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300790</td><td>宇瞳光学</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300814</td><td>中富电路</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300860</td><td>锋尚文化</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300915</td><td>海融科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300920</td><td>润阳科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300931</td><td>通用电梯</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300936</td><td>中英科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300953</td><td>震裕科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300966</td><td>共同药业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300975</td><td>商络电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz300977</td><td>深圳瑞捷</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301045</td><td>天禄科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301060</td><td>兰卫医学</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301071</td><td>力量钻石</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301077</td><td>星华新材</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301099</td><td>雅创电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301107</td><td>瑜欣电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301123</td><td>奕东电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301148</td><td>嘉戎技术</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301166</td><td>优宁维</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301280</td><td>珠城科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301291</td><td>明阳电气</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301297</td><td>富乐德</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301305</td><td>朗坤科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301322</td><td>绿通科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301325</td><td>曼恩斯特</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301337</td><td>亚华电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301345</td><td>涛涛车业</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301369</td><td>联动科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301373</td><td>凌玮科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301379</td><td>天山电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301381</td><td>赛维时代</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301389</td><td>隆扬电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301421</td><td>波长光电</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301458</td><td>钧崴电子</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301502</td><td>华阳智能</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301531</td><td>春光集团</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301580</td><td>爱迪特</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301607</td><td>富特科技</td><td> <span class="new">新进</span></td></tr>
-<tr><td>sz301630</td><td>同宇新材</td><td> <span class="new">新进</span></td></tr>
-
-  </table>
+  <div class="pool-summary">
+    <div class="ps-item"><div class="ps-num">631</div><div class="ps-label">今日多头排列只数</div></div>
+    <div class="ps-item"><div class="ps-num">153</div><div class="ps-label">较昨日新进只数</div></div>
+    <div class="ps-item"><div class="ps-num">657</div><div class="ps-label">昨日只数</div></div>
   </div>
-  <div class="note">仅列出今日满足口径的个股（未含业绩/题材/回踩位置等人工筛选，买入需再按下方规则排序与低吸）。</div>
+  <div class="note">仅展示多头排列总数（口径：MA5&gt;MA10&gt;MA20 且收盘价&gt;MA5，剔除ST/科创板/北交所）。完整个股名单不在此列出；<b>质地优选池</b>（下方）为按优先买入顺序排序的候选池，其中符合课程卖出条件的个股已做标记。</div>
 </div>
 
 
@@ -742,53 +114,53 @@
   <div class="note">当日热点题材（叠加）：PCB/覆铜板、玻璃基板/先进封装、半导体设备/材料、HBM/存储配套、国产芯片/模拟芯片、仪器仪表、CRO/创新药、复合铜箔、培育钻石、地产链 ｜ 候选池内强势行业（当日平均涨幅前5）：基础化工、建筑、交运设备、有色金属、机械设备 ｜ 共 42 只。</div>
   <div class="q-scroll">
   <table class="q-table">
-    <tr><th>排名</th><th>代码</th><th>名称</th><th>行业</th><th>市值(亿)</th><th>成交额(亿)</th><th>当日涨幅</th><th>PE(动)</th><th>质地分</th><th>入选原因</th></tr>
-<tr><td><span class="rank-badge rank-1">1</span></td><td>sh603259</td><td>药明康德</td><td>医药生物</td><td>4153.9</td><td>45.3</td><td><span class="up">+0.06%</span></td><td>23.5</td><td><span class="score-hi">111.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:CRO/创新药；净利同比+29.4%；ROE 13.2%；营收同比+38.9%；EPS 3.80；PE 23.5 估值适中；市值4154亿 大市值龙头；行业位置: 同行业3只内 ROEP100、净利P100、营收P100、毛利P100 分位均值100%；行业指标: 毛利率P100、净利率P100 综合100%；近期公告:药明康德:H股公告</td></tr>
-<tr><td><span class="rank-badge rank-2">2</span></td><td>sz300502</td><td>新易盛</td><td>信息技术</td><td>5661.3</td><td>103.0</td><td><span class="down">-0.84%</span></td><td>48.0</td><td><span class="score-hi">110.5</span></td><td class="reasons">净利同比+91.0%；ROE 34.9%；营收同比+100.3%；EPS 5.41；PE 48.0 估值适中；市值5661亿 大市值龙头；行业位置: 同行业4只内 ROEP100、净利P33、营收P100、毛利P33 分位均值67%；行业指标: 毛利率P33、净利率P100、现金流P100 综合73%</td></tr>
-<tr><td><span class="rank-badge rank-3">3</span></td><td>sz002636</td><td>金安国纪</td><td>电子设备</td><td>632.0</td><td>67.8</td><td><span class="up">+1.83%</span></td><td>63.7</td><td><span class="score-hi">108.0</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+986.7%；ROE 19.4%；营收同比+65.7%；EPS 1.05；PE 63.7；行业位置: 同行业21只内 ROEP100、净利P100、营收P80、毛利P60 分位均值88%；行业指标: 毛利率P60、净利率P80、现金流P55 综合64%</td></tr>
-<tr><td><span class="rank-badge ">4</span></td><td>sh603268</td><td>松发股份</td><td>国防与装备</td><td>502.2</td><td>11.8</td><td><span class="down">-1.68%</span></td><td>39.1</td><td><span class="score-hi">108.0</span></td><td class="reasons">净利同比+457.7%；ROE 32.1%；营收同比+251.9%；EPS 3.72；PE 39.1 估值适中；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%；近期公告:松发股份:关于召开2026年半年度业绩说明会的公告(重大)</td></tr>
-<tr><td><span class="rank-badge ">5</span></td><td>sh603893</td><td>瑞芯微</td><td>电子设备</td><td>943.1</td><td>69.7</td><td><span class="up">+2.39%</span></td><td>69.0</td><td><span class="score-hi">107.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+61.7%；ROE 18.3%；营收同比+40.6%；EPS 2.04；PE 69.0；行业位置: 同行业21只内 ROEP95、净利P35、营收P55、毛利P85 分位均值67%；行业指标: 毛利率P85、净利率P90、现金流P85 综合87%</td></tr>
-<tr><td><span class="rank-badge ">6</span></td><td>sz300548</td><td>长芯博创</td><td>信息技术</td><td>703.2</td><td>22.9</td><td><span class="up">+1.19%</span></td><td>144.4</td><td><span class="score-hi">103.0</span></td><td class="reasons">净利同比+91.1%；ROE 15.3%；营收同比+40.7%；EPS 1.10；PE 144.4 偏高；行业位置: 同行业4只内 ROEP67、净利P67、营收P67、毛利P67 分位均值67%；行业指标: 毛利率P67、净利率P67、现金流P67 综合67%；近期公告:长芯博创:国浩律师(北京)事务所关于长芯博创科技股份有限公司2021年股票期</td></tr>
-<tr><td><span class="rank-badge ">7</span></td><td>sz002916</td><td>深南电路</td><td>电子设备</td><td>2758.3</td><td>45.2</td><td><span class="up">+3.69%</span></td><td>67.8</td><td><span class="score-hi">102.5</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+65.5%；ROE 12.4%；营收同比+46.3%；EPS 3.32；PE 67.8；市值2758亿 大市值龙头；行业位置: 同行业21只内 ROEP90、净利P40、营收P65、毛利P50 分位均值62%；行业指标: 毛利率P50、净利率P60、现金流P95 综合66%；近期公告:深南电路:2026年9月21日投资者关系活动记录表</td></tr>
-<tr><td><span class="rank-badge ">8</span></td><td>sh603256</td><td>宏和科技</td><td>基础化工</td><td>1418.4</td><td>48.3</td><td><span class="down">-1.52%</span></td><td>287.1</td><td><span class="score-hi">102.0</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+334.3%；ROE 15.3%；营收同比+90.4%；EPS 0.42；PE 287.1 偏高；市值1418亿 大市值龙头；行业位置: 同行业5只内 ROEP100、净利P100、营收P100、毛利P100 分位均值100%；行业指标: 负债率P0(低优)、现金流P75 综合38%；近期公告:宏和科技:宏和科技股东减持股份结果公告；行业(基础化工)当日候选内平均+3.94%</td></tr>
-<tr><td><span class="rank-badge ">9</span></td><td>sh600601</td><td>方正科技</td><td>电子设备</td><td>628.0</td><td>20.6</td><td><span class="down">-1.95%</span></td><td>73.7</td><td><span class="score-hi">99.1</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+232.4%；ROE 11.6%；营收同比+72.9%；EPS 0.14；PE 73.7；行业位置: 同行业21只内 ROEP85、净利P60、营收P85、毛利P55 分位均值72%；行业指标: 毛利率P55、净利率P65、现金流P25 综合49%；近期公告:方正科技:方正科技关于公司及全资子公司签署募集资金专户存储监管协议的公告(重大)</td></tr>
-<tr><td><span class="rank-badge ">10</span></td><td>sz300223</td><td>君正股份</td><td>电子设备</td><td>621.6</td><td>24.4</td><td><span class="up">+0.60%</span></td><td>55.2</td><td><span class="score-hi">98.0</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+489.6%；ROE 9.2%；营收同比+75.9%；EPS 2.48；PE 55.2；行业位置: 同行业21只内 ROEP75、净利P80、营收P95、毛利P95 分位均值84%；行业指标: 毛利率P95、净利率P100、现金流P90 综合95%；近期公告:君正股份:H股公告-翌日披露报表</td></tr>
-<tr><td><span class="rank-badge ">11</span></td><td>sz300408</td><td>三环集团</td><td>电子设备</td><td>2438.2</td><td>39.8</td><td><span class="up">+0.71%</span></td><td>78.6</td><td><span class="score-hi">95.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+56.2%；ROE 8.6%；营收同比+54.8%；EPS 1.01；PE 78.6；市值2438亿 大市值龙头；行业位置: 同行业21只内 ROEP70、净利P30、营收P70、毛利P80 分位均值60%；行业指标: 毛利率P80、净利率P95、现金流P75 综合83%；近期公告:三环集团:君合律师事务所上海分所关于潮州三环(集团)股份有限公司2026年第</td></tr>
-<tr><td><span class="rank-badge ">12</span></td><td>sz300661</td><td>圣邦股份</td><td>电子设备</td><td>737.1</td><td>10.8</td><td><span class="up">+0.63%</span></td><td>109.5</td><td><span class="score-hi">91.1</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+109.3%；ROE 7.6%；营收同比+42.7%；EPS 0.68；PE 109.5 偏高；行业位置: 同行业21只内 ROEP65、净利P50、营收P60、毛利P100 分位均值66%；行业指标: 毛利率P100、净利率P70、现金流P65 综合80%；近期公告:圣邦股份:关于2023年股票期权激励计划首次授予部分第三个行权期采用自主行权</td></tr>
-<tr><td><span class="rank-badge ">13</span></td><td>sz002222</td><td>福晶科技</td><td>电子设备</td><td>327.4</td><td>15.8</td><td><span class="down">-1.71%</span></td><td>99.3</td><td><span class="score-hi">89.5</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+41.0%；ROE 9.8%；营收同比+39.5%；EPS 0.38；PE 99.3；行业位置: 同行业21只内 ROEP80、净利P25、营收P50、毛利P90 分位均值60%；行业指标: 毛利率P90、净利率P85、现金流P70 综合82%</td></tr>
-<tr><td><span class="rank-badge ">14</span></td><td>sz300672</td><td>国科微</td><td>电子设备</td><td>422.9</td><td>13.9</td><td><span class="down">-1.04%</span></td><td>-757.1</td><td><span class="score-hi">86.8</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+872.8%；ROE 5.0%；营收同比+85.8%；EPS 0.90；PE≤0 亏损/无市盈率；行业位置: 同行业21只内 ROEP45、净利P95、营收P100、毛利P75 分位均值77%；行业指标: 毛利率P75、净利率P55、现金流P100 综合77%</td></tr>
-<tr><td><span class="rank-badge ">15</span></td><td>sz300454</td><td>深信服</td><td>信息技术</td><td>421.7</td><td>17.1</td><td><span class="down">-3.11%</span></td><td>74.2</td><td><span class="score-mid">83.9</span></td><td class="reasons">净利同比+201.6%；ROE 2.2%；营收同比+32.8%；EPS 0.54；PE 74.2；行业位置: 同行业4只内 ROEP0、净利P100、营收P33、毛利P100 分位均值57%；行业指标: 毛利率P100、净利率P0、现金流P0 综合40%；近期公告:深信服:深信服科技股份有限公司关于2026年度限制性股票激励计划内幕信息知情</td></tr>
-<tr><td><span class="rank-badge ">16</span></td><td>sh601208</td><td>东材科技</td><td>基础化工</td><td>555.6</td><td>53.7</td><td><span class="up">+5.38%</span></td><td>136.6</td><td><span class="score-mid">83.8</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+63.8%；ROE 5.0%；营收同比+27.3%；EPS 0.31；PE 136.6 偏高；行业位置: 同行业5只内 ROEP50、净利P75、营收P50、毛利P0 分位均值48%；行业指标: 负债率P25(低优)、现金流P50 综合38%；近期公告:东材科技:四川东材科技集团股份有限公司关于召开2026年半年度业绩说明会的公(重大)；行业(基础化工)当日候选内平均+3.94%</td></tr>
-<tr><td><span class="rank-badge ">17</span></td><td>sz002185</td><td>华天科技</td><td>电子设备</td><td>611.0</td><td>60.4</td><td><span class="up">+0.49%</span></td><td>47.1</td><td><span class="score-mid">81.8</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+259.2%；ROE 4.4%；营收同比+35.1%；EPS 0.25；PE 47.1 估值适中；行业位置: 同行业21只内 ROEP40、净利P65、营收P45、毛利P20 分位均值45%；行业指标: 毛利率P20、净利率P35、现金流P35 综合29%</td></tr>
-<tr><td><span class="rank-badge ">18</span></td><td>sz301511</td><td>德福科技</td><td>电子设备</td><td>449.2</td><td>27.5</td><td><span class="up">+1.42%</span></td><td>210.6</td><td><span class="score-mid">81.0</span></td><td class="reasons">净利同比+580.7%；ROE 6.3%；营收同比+73.5%；EPS 0.42；PE 210.6 偏高；行业位置: 同行业21只内 ROEP50、净利P90、营收P90、毛利P5 分位均值61%；行业指标: 毛利率P5、净利率P25、现金流P5 综合11%；近期公告:德福科技:关于公司部分董事及高级管理人员及合伙企业股份减持计划的预披露公告</td></tr>
-<tr><td><span class="rank-badge ">19</span></td><td>sh600206</td><td>有研新材</td><td>有色金属</td><td>435.8</td><td>36.9</td><td><span class="up">+3.06%</span></td><td>137.1</td><td><span class="score-mid">76.0</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+40.9%；ROE 4.2%；营收同比+50.4%；EPS 0.22；PE 137.1 偏高；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 负债率P50(低优)、现金流P50 综合50%；行业(有色金属)当日候选内平均+3.06%</td></tr>
-<tr><td><span class="rank-badge ">20</span></td><td>sh600641</td><td>先导基电</td><td>电子设备</td><td>444.8</td><td>79.6</td><td><span class="up">+9.28%</span></td><td>1060.7</td><td><span class="score-mid">75.7</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:半导体设备/材料/国产芯片/模拟芯片；净利同比+414.9%；ROE 2.5%；营收同比+64.1%；EPS 0.23；PE 1060.7 偏高；行业位置: 同行业21只内 ROEP30、净利P75、营收P75、毛利P35 分位均值53%；行业指标: 毛利率P35、净利率P50、现金流P0 综合29%；近期公告:先导基电:关于《上海先导基电科技股份有限公司股票交易异常波动询证函》的回函</td></tr>
-<tr><td><span class="rank-badge ">21</span></td><td>sz300346</td><td>南大光电</td><td>电子设备</td><td>368.6</td><td>13.1</td><td><span class="up">+0.85%</span></td><td>104.6</td><td><span class="score-mid">75.5</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:半导体设备/材料/国产芯片/模拟芯片；净利同比+23.1%；ROE 7.2%；营收同比+11.4%；EPS 0.37；PE 104.6 偏高；行业位置: 同行业21只内 ROEP60、净利P20、营收P10、毛利P70 分位均值40%；行业指标: 毛利率P70、净利率P75、现金流P45 综合64%；近期公告:南大光电:北京国枫律师事务所关于江苏南大光电材料股份有限公司2026年第二次</td></tr>
-<tr><td><span class="rank-badge ">22</span></td><td>sz301217</td><td>铜冠铜箔</td><td>电子设备</td><td>988.4</td><td>49.8</td><td><span class="up">+4.09%</span></td><td>407.5</td><td><span class="score-mid">74.4</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+514.7%；ROE 3.9%；营收同比+34.2%；EPS 0.26；PE 407.5 偏高；行业位置: 同行业21只内 ROEP35、净利P85、营收P40、毛利P0 分位均值44%；行业指标: 毛利率P0、净利率P30、现金流P10 综合12%；近期公告:301217铜冠铜箔投资者关系管理信息20260918</td></tr>
-<tr><td><span class="rank-badge ">23</span></td><td>sz000636</td><td>风华高科</td><td>电子设备</td><td>674.0</td><td>53.9</td><td><span class="up">+1.71%</span></td><td>165.7</td><td><span class="score-mid">74.0</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+74.0%；ROE 2.3%；营收同比+26.3%；EPS 0.25；PE 165.7 偏高；行业位置: 同行业21只内 ROEP25、净利P45、营收P35、毛利P30 分位均值34%；行业指标: 毛利率P30、净利率P40、现金流P30 综合33%</td></tr>
-<tr><td><span class="rank-badge ">24</span></td><td>sh603067</td><td>振华股份</td><td>基础化工</td><td>301.1</td><td>17.6</td><td><span class="up">+9.99%</span></td><td>45.0</td><td><span class="score-mid">72.8</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+3.5%；ROE 7.7%；营收同比+28.1%；EPS 0.43；PE 45.0 估值适中；行业位置: 同行业5只内 ROEP75、净利P25、营收P75、毛利P50 分位均值55%；行业指标: 负债率P75(低优)、现金流P25 综合50%；近期公告:振华股份:湖北振华化学股份有限公司相关债券2026年跟踪评级报告；行业(基础化工)当日候选内平均+3.94%</td></tr>
-<tr><td><span class="rank-badge ">25</span></td><td>sh605358</td><td>立昂微</td><td>电子设备</td><td>370.9</td><td>20.5</td><td><span class="up">+2.41%</span></td><td>541.0</td><td><span class="score-mid">72.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:半导体设备/材料/国产芯片/模拟芯片；净利同比+166.1%；ROE 1.1%；营收同比+25.7%；EPS 0.12；PE 541.0 偏高；行业位置: 同行业21只内 ROEP10、净利P55、营收P30、毛利P10 分位均值28%；行业指标: 毛利率P10、净利率P15、现金流P50 综合24%；近期公告:立昂微:立昂微股东及董事、高级管理人员减持股份结果</td></tr>
-<tr><td><span class="rank-badge ">26</span></td><td>sz002436</td><td>兴森科技</td><td>电子设备</td><td>696.7</td><td>70.7</td><td><span class="up">+3.78%</span></td><td>360.1</td><td><span class="">69.9</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+283.3%；ROE 2.0%；营收同比+17.9%；EPS 0.07；PE 360.1 偏高；行业位置: 同行业21只内 ROEP20、净利P70、营收P20、毛利P40 分位均值39%；行业指标: 毛利率P40、净利率P5、现金流P15 综合22%</td></tr>
-<tr><td><span class="rank-badge ">27</span></td><td>sz002138</td><td>顺络电子</td><td>电子设备</td><td>418.9</td><td>13.8</td><td><span class="up">+0.57%</span></td><td>44.9</td><td><span class="">67.5</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比-8.0%；ROE 6.8%；营收同比+19.7%；EPS 0.57；PE 44.9 估值适中；行业位置: 同行业21只内 ROEP55、净利P15、营收P25、毛利P65 分位均值39%；行业指标: 毛利率P65、净利率P45、现金流P80 综合64%；近期公告:顺络电子:关于为控股公司提供担保的进展情况公告</td></tr>
-<tr><td><span class="rank-badge ">28</span></td><td>sz300285</td><td>国瓷材料</td><td>基础化工</td><td>588.6</td><td>51.3</td><td><span class="up">+4.23%</span></td><td>107.3</td><td><span class="">66.3</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+9.4%；ROE 5.0%；营收同比+16.6%；EPS 0.37；PE 107.3 偏高；行业位置: 同行业5只内 ROEP25、净利P50、营收P25、毛利P75 分位均值42%；行业指标: 负债率P100(低优)、现金流P100 综合100%；近期公告:国瓷材料:北京天达共和律师事务所关于山东国瓷功能材料股份有限公司2026年第；行业(基础化工)当日候选内平均+3.94%</td></tr>
-<tr><td><span class="rank-badge ">29</span></td><td>sh600887</td><td>伊利股份</td><td>食品饮料</td><td>1694.3</td><td>11.1</td><td><span class="up">+0.56%</span></td><td>16.8</td><td><span class="">64.1</span></td><td class="reasons">净利同比-20.0%；ROE 10.1%；营收同比+4.1%；EPS 0.91；PE 16.8 估值适中；市值1694亿 大市值龙头；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50 综合50%；近期公告:伊利股份:内蒙古伊利实业集团股份有限公司关于2023年持股计划(第三期)完成</td></tr>
-<tr><td><span class="rank-badge ">30</span></td><td>sz300759</td><td>康龙化成</td><td>医药生物</td><td>639.3</td><td>24.7</td><td><span class="up">+1.26%</span></td><td>48.3</td><td><span class="">63.9</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:CRO/创新药；净利同比+7.0%；ROE 4.6%；营收同比+17.9%；EPS 0.41；PE 48.3 估值适中；行业位置: 同行业3只内 ROEP50、净利P50、营收P50、毛利P0 分位均值40%；行业指标: 毛利率P0、净利率P0 综合0%；近期公告:康龙化成:关于公司实际控制人的一致行动人部分股份解除质押的公告</td></tr>
-<tr><td><span class="rank-badge ">31</span></td><td>sz300570</td><td>太辰光</td><td>信息技术</td><td>434.7</td><td>30.1</td><td><span class="down">-0.56%</span></td><td>170.2</td><td><span class="">59.7</span></td><td class="reasons">净利同比+1.7%；ROE 9.8%；营收同比+20.8%；EPS 0.78；PE 170.2 偏高；行业位置: 同行业4只内 ROEP33、净利P0、营收P0、毛利P0 分位均值10%；行业指标: 毛利率P0、净利率P33、现金流P33 综合20%</td></tr>
-<tr><td><span class="rank-badge ">32</span></td><td>sh600699</td><td>均胜电子</td><td>交运设备</td><td>300.5</td><td>15.7</td><td><span class="up">+3.51%</span></td><td>24.4</td><td><span class="">56.3</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+4.4%；ROE 4.2%；营收同比-7.4%；EPS 0.48；PE 24.4 估值适中；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%；行业(交运设备)当日候选内平均+3.51%</td></tr>
-<tr><td><span class="rank-badge ">33</span></td><td>sh605589</td><td>圣泉集团</td><td>基础化工</td><td>348.8</td><td>12.4</td><td><span class="up">+1.60%</span></td><td>36.6</td><td><span class="">51.2</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比-10.7%；ROE 4.2%；营收同比+13.7%；EPS 0.53；PE 36.6 估值适中；行业位置: 同行业5只内 ROEP0、净利P0、营收P0、毛利P25 分位均值5%；行业指标: 负债率P50(低优)、现金流P0 综合25%；近期公告:圣泉集团:圣泉集团证券投资业务管理制度；行业(基础化工)当日候选内平均+3.94%</td></tr>
-<tr><td><span class="rank-badge ">34</span></td><td>sz002821</td><td>凯莱英</td><td>医药生物</td><td>597.9</td><td>11.9</td><td><span class="up">+0.19%</span></td><td>65.5</td><td><span class="">48.1</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:CRO/创新药；净利同比-15.7%；ROE 2.9%；营收同比+13.1%；EPS 1.45；PE 65.5；行业位置: 同行业3只内 ROEP0、净利P0、营收P0、毛利P50 分位均值10%；行业指标: 毛利率P50、净利率P50 综合50%；近期公告:凯莱英:2026年A股限制性股票激励计划首次授予部分登记完成公告(定向增发)</td></tr>
-<tr><td><span class="rank-badge ">35</span></td><td>sh600667</td><td>太极实业</td><td>建筑</td><td>430.6</td><td>52.3</td><td><span class="up">+3.62%</span></td><td>98.7</td><td><span class="">46.4</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比-3.5%；ROE 3.6%；营收同比-14.9%；EPS 0.15；PE 98.7；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%；近期公告:太极实业:关于累计诉讼、仲裁事项的公告；行业(建筑)当日候选内平均+3.62%</td></tr>
-<tr><td><span class="rank-badge ">36</span></td><td>sz001979</td><td>招商蛇口</td><td>房地产</td><td>643.0</td><td>11.7</td><td><span class="down">-0.28%</span></td><td>630.6</td><td><span class="">34.7</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:地产链；净利同比-63.5%；ROE 0.5%；营收同比+6.4%；EPS 0.06；PE 630.6 偏高；行业位置: 同行业3只内 ROEP50、净利P0、营收P100、毛利P100 分位均值55%；行业指标: 负债率P100(低优)、现金流P100 综合100%；近期公告:招商蛇口:招商蛇口董事长授权事项专题会议事细则</td></tr>
-<tr><td><span class="rank-badge ">37</span></td><td>sh603920</td><td>世运电路</td><td>电子设备</td><td>331.2</td><td>13.3</td><td><span class="down">-0.41%</span></td><td>86.3</td><td><span class="">33.8</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比-78.1%；ROE 1.3%；营收同比+16.8%；EPS 0.12；PE 86.3；行业位置: 同行业21只内 ROEP15、净利P5、营收P15、毛利P15 分位均值12%；行业指标: 毛利率P15、净利率P10、现金流P40 综合21%；近期公告:世运电路:2026年9月15日投资者关系活动记录表</td></tr>
-<tr><td><span class="rank-badge ">38</span></td><td>sz002046</td><td>国机精工</td><td>机械设备</td><td>350.4</td><td>12.5</td><td><span class="up">+2.82%</span></td><td>262.7</td><td><span class="">25.4</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比-71.9%；ROE 1.1%；营收同比-4.5%；EPS 0.09；PE 262.7 偏高；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%；近期公告:国机精工:光大证券股份有限公司关于国机精工集团股份有限公司向特定对象发行股票；行业(机械设备)当日候选内平均+2.82%</td></tr>
-<tr><td><span class="rank-badge ">39</span></td><td>sh600048</td><td>保利发展</td><td>房地产</td><td>675.1</td><td>21.4</td><td><span class="down">-0.70%</span></td><td>-212.7</td><td><span class="">25.3</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:地产链；净利同比-40.8%；ROE 1.0%；营收同比-12.0%；EPS 0.17；PE≤0 亏损/无市盈率；行业位置: 同行业3只内 ROEP100、净利P50、营收P50、毛利P50 分位均值65%；行业指标: 负债率P50(低优)、现金流P50 综合50%；近期公告:保利发展:投资者关系活动记录表-2026年9月15日</td></tr>
-<tr><td><span class="rank-badge ">40</span></td><td>sh600707</td><td>彩虹股份</td><td>电子设备</td><td>351.6</td><td>19.9</td><td><span class="up">+2.62%</span></td><td>1557.9</td><td><span class="">20.0</span></td><td class="reasons">净利同比-77.9%；ROE 0.5%；营收同比-1.8%；EPS 0.03；PE 1557.9 偏高；行业位置: 同行业21只内 ROEP5、净利P10、营收P0、毛利P25 分位均值10%；行业指标: 毛利率P25、净利率P20、现金流P60 综合34%</td></tr>
-<tr><td><span class="rank-badge ">41</span></td><td>sh600330</td><td>天通股份</td><td>电子设备</td><td>369.8</td><td>25.8</td><td><span class="up">+0.91%</span></td><td>-73.9</td><td><span class="">11.7</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比-636.7%；ROE -3.7%；营收同比+10.8%；EPS -0.23；PE≤0 亏损/无市盈率；行业位置: 同行业21只内 ROEP0、净利P0、营收P5、毛利P45 分位均值10%；行业指标: 毛利率P45、净利率P0、现金流P20 综合24%；近期公告:天通股份:2026年9月18日投资者关系活动记录表</td></tr>
-<tr><td><span class="rank-badge ">42</span></td><td>sz000002</td><td>万  科Ａ</td><td>房地产</td><td>380.8</td><td>42.9</td><td><span class="up">+2.89%</span></td><td>-0.5</td><td><span class="">4.2</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:地产链；净利同比-25.2%；ROE -13.7%；营收同比-33.4%；EPS -1.25；PE≤0 亏损/无市盈率；行业位置: 同行业3只内 ROEP0、净利P100、营收P0、毛利P0 分位均值30%；行业指标: 负债率P0(低优)、现金流P0 综合0%；近期公告:万科A:A股股票交易异常波动公告</td></tr>
+    <tr><th>排名</th><th>代码</th><th>名称</th><th>行业</th><th>市值(亿)</th><th>成交额(亿)</th><th>当日涨幅</th><th>PE(动)</th><th>质地分</th><th>入选原因</th><th>卖出标记</th></tr>
+<tr><td><span class="rank-badge rank-1">1</span></td><td>sh603259</td><td>药明康德</td><td>医药生物</td><td>4153.9</td><td>45.3</td><td><span class="up">+0.06%</span></td><td>23.5</td><td><span class="score-hi">111.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:CRO/创新药；净利同比+29.4%；ROE 13.2%；营收同比+38.9%；EPS 3.80；PE 23.5 估值适中；市值4154亿 大市值龙头；行业位置: 同行业3只内 ROEP100、净利P100、营收P100、毛利P100 分位均值100%；行业指标: 毛利率P100、净利率P100 综合100%；近期公告:药明康德:H股公告</td><td>—</td></tr>
+<tr><td><span class="rank-badge rank-2">2</span></td><td>sz300502</td><td>新易盛</td><td>信息技术</td><td>5661.3</td><td>103.0</td><td><span class="down">-0.84%</span></td><td>48.0</td><td><span class="score-hi">110.5</span></td><td class="reasons">净利同比+91.0%；ROE 34.9%；营收同比+100.3%；EPS 5.41；PE 48.0 估值适中；市值5661亿 大市值龙头；行业位置: 同行业4只内 ROEP100、净利P33、营收P100、毛利P33 分位均值67%；行业指标: 毛利率P33、净利率P100、现金流P100 综合73%</td><td>—</td></tr>
+<tr><td><span class="rank-badge rank-3">3</span></td><td>sz002636</td><td>金安国纪</td><td>电子设备</td><td>632.0</td><td>67.8</td><td><span class="up">+1.83%</span></td><td>63.7</td><td><span class="score-hi">108.0</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+986.7%；ROE 19.4%；营收同比+65.7%；EPS 1.05；PE 63.7；行业位置: 同行业21只内 ROEP100、净利P100、营收P80、毛利P60 分位均值88%；行业指标: 毛利率P60、净利率P80、现金流P55 综合64%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">4</span></td><td>sh603893</td><td>瑞芯微</td><td>电子设备</td><td>943.1</td><td>69.7</td><td><span class="up">+2.39%</span></td><td>69.0</td><td><span class="score-hi">107.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+61.7%；ROE 18.3%；营收同比+40.6%；EPS 2.04；PE 69.0；行业位置: 同行业21只内 ROEP95、净利P35、营收P55、毛利P85 分位均值67%；行业指标: 毛利率P85、净利率P90、现金流P85 综合87%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">5</span></td><td>sh603268</td><td>松发股份</td><td>国防与装备</td><td>502.2</td><td>11.8</td><td><span class="down">-1.68%</span></td><td>39.1</td><td><span class="score-hi">106.0</span></td><td class="reasons">净利同比+457.7%；ROE 32.1%；营收同比+251.9%；EPS 3.72；PE 39.1 估值适中；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">6</span></td><td>sz300548</td><td>长芯博创</td><td>信息技术</td><td>703.2</td><td>22.9</td><td><span class="up">+1.19%</span></td><td>144.4</td><td><span class="score-hi">103.0</span></td><td class="reasons"><span class="hot-badge">卖出信号</span>净利同比+91.1%；ROE 15.3%；营收同比+40.7%；EPS 1.10；PE 144.4 偏高；行业位置: 同行业4只内 ROEP67、净利P67、营收P67、毛利P67 分位均值67%；行业指标: 毛利率P67、净利率P67、现金流P67 综合67%；近期公告:长芯博创:国浩律师(北京)事务所关于长芯博创科技股份有限公司2021年股票期</td><td><span class="sell-flag">贴近5日线(破位即减)</span></td></tr>
+<tr><td><span class="rank-badge ">7</span></td><td>sz002916</td><td>深南电路</td><td>电子设备</td><td>2758.3</td><td>45.2</td><td><span class="up">+3.69%</span></td><td>67.8</td><td><span class="score-hi">102.5</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+65.5%；ROE 12.4%；营收同比+46.3%；EPS 3.32；PE 67.8；市值2758亿 大市值龙头；行业位置: 同行业21只内 ROEP90、净利P40、营收P65、毛利P50 分位均值62%；行业指标: 毛利率P50、净利率P60、现金流P95 综合66%；近期公告:深南电路:2026年9月21日投资者关系活动记录表</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">8</span></td><td>sh603256</td><td>宏和科技</td><td>基础化工</td><td>1418.4</td><td>48.3</td><td><span class="down">-1.52%</span></td><td>287.1</td><td><span class="score-hi">102.0</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span><span class="hot-badge">卖出信号</span>净利同比+334.3%；ROE 15.3%；营收同比+90.4%；EPS 0.42；PE 287.1 偏高；市值1418亿 大市值龙头；行业位置: 同行业5只内 ROEP100、净利P100、营收P100、毛利P100 分位均值100%；行业指标: 负债率P0(低优)、现金流P75 综合38%；近期公告:宏和科技:宏和科技股东减持股份结果公告；行业(基础化工)当日候选内平均+3.94%</td><td><span class="sell-flag">破高反跌</span></td></tr>
+<tr><td><span class="rank-badge ">9</span></td><td>sh600601</td><td>方正科技</td><td>电子设备</td><td>628.0</td><td>20.6</td><td><span class="down">-1.95%</span></td><td>73.7</td><td><span class="score-hi">99.1</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:PCB/覆铜板；净利同比+232.4%；ROE 11.6%；营收同比+72.9%；EPS 0.14；PE 73.7；行业位置: 同行业21只内 ROEP85、净利P60、营收P85、毛利P55 分位均值72%；行业指标: 毛利率P55、净利率P65、现金流P25 综合49%；近期公告:方正科技:方正科技关于公司及全资子公司签署募集资金专户存储监管协议的公告(重大)</td><td><span class="sell-flag">破高反跌</span></td></tr>
+<tr><td><span class="rank-badge ">10</span></td><td>sz300223</td><td>君正股份</td><td>电子设备</td><td>621.6</td><td>24.4</td><td><span class="up">+0.60%</span></td><td>55.2</td><td><span class="score-hi">98.0</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+489.6%；ROE 9.2%；营收同比+75.9%；EPS 2.48；PE 55.2；行业位置: 同行业21只内 ROEP75、净利P80、营收P95、毛利P95 分位均值84%；行业指标: 毛利率P95、净利率P100、现金流P90 综合95%；近期公告:君正股份:H股公告-翌日披露报表</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">11</span></td><td>sz300408</td><td>三环集团</td><td>电子设备</td><td>2438.2</td><td>39.8</td><td><span class="up">+0.71%</span></td><td>78.6</td><td><span class="score-hi">95.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+56.2%；ROE 8.6%；营收同比+54.8%；EPS 1.01；PE 78.6；市值2438亿 大市值龙头；行业位置: 同行业21只内 ROEP70、净利P30、营收P70、毛利P80 分位均值60%；行业指标: 毛利率P80、净利率P95、现金流P75 综合83%；近期公告:三环集团:君合律师事务所上海分所关于潮州三环(集团)股份有限公司2026年第</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">12</span></td><td>sz300661</td><td>圣邦股份</td><td>电子设备</td><td>737.1</td><td>10.8</td><td><span class="up">+0.63%</span></td><td>109.5</td><td><span class="score-hi">91.1</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+109.3%；ROE 7.6%；营收同比+42.7%；EPS 0.68；PE 109.5 偏高；行业位置: 同行业21只内 ROEP65、净利P50、营收P60、毛利P100 分位均值66%；行业指标: 毛利率P100、净利率P70、现金流P65 综合80%；近期公告:圣邦股份:关于2023年股票期权激励计划首次授予部分第三个行权期采用自主行权</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">13</span></td><td>sz002222</td><td>福晶科技</td><td>电子设备</td><td>327.4</td><td>15.8</td><td><span class="down">-1.71%</span></td><td>99.3</td><td><span class="score-hi">89.5</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:PCB/覆铜板；净利同比+41.0%；ROE 9.8%；营收同比+39.5%；EPS 0.38；PE 99.3；行业位置: 同行业21只内 ROEP80、净利P25、营收P50、毛利P90 分位均值60%；行业指标: 毛利率P90、净利率P85、现金流P70 综合82%</td><td><span class="sell-flag">贴近5日线(破位即减)、破高反跌</span></td></tr>
+<tr><td><span class="rank-badge ">14</span></td><td>sz300672</td><td>国科微</td><td>电子设备</td><td>422.9</td><td>13.9</td><td><span class="down">-1.04%</span></td><td>-757.1</td><td><span class="score-hi">86.8</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:国产芯片/模拟芯片；净利同比+872.8%；ROE 5.0%；营收同比+85.8%；EPS 0.90；PE≤0 亏损/无市盈率；行业位置: 同行业21只内 ROEP45、净利P95、营收P100、毛利P75 分位均值77%；行业指标: 毛利率P75、净利率P55、现金流P100 综合77%</td><td><span class="sell-flag">破高反跌</span></td></tr>
+<tr><td><span class="rank-badge ">15</span></td><td>sz300454</td><td>深信服</td><td>信息技术</td><td>421.7</td><td>17.1</td><td><span class="down">-3.11%</span></td><td>74.2</td><td><span class="score-mid">83.9</span></td><td class="reasons"><span class="hot-badge">卖出信号</span>净利同比+201.6%；ROE 2.2%；营收同比+32.8%；EPS 0.54；PE 74.2；行业位置: 同行业4只内 ROEP0、净利P100、营收P33、毛利P100 分位均值57%；行业指标: 毛利率P100、净利率P0、现金流P0 综合40%；近期公告:深信服:深信服科技股份有限公司关于2026年度限制性股票激励计划内幕信息知情</td><td><span class="sell-flag">破高反跌</span></td></tr>
+<tr><td><span class="rank-badge ">16</span></td><td>sh601208</td><td>东材科技</td><td>基础化工</td><td>555.6</td><td>53.7</td><td><span class="up">+5.38%</span></td><td>136.6</td><td><span class="score-mid">83.8</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+63.8%；ROE 5.0%；营收同比+27.3%；EPS 0.31；PE 136.6 偏高；行业位置: 同行业5只内 ROEP50、净利P75、营收P50、毛利P0 分位均值48%；行业指标: 负债率P25(低优)、现金流P50 综合38%；近期公告:东材科技:四川东材科技集团股份有限公司关于召开2026年半年度业绩说明会的公(重大)；行业(基础化工)当日候选内平均+3.94%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">17</span></td><td>sz002185</td><td>华天科技</td><td>电子设备</td><td>611.0</td><td>60.4</td><td><span class="up">+0.49%</span></td><td>47.1</td><td><span class="score-mid">81.8</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:国产芯片/模拟芯片；净利同比+259.2%；ROE 4.4%；营收同比+35.1%；EPS 0.25；PE 47.1 估值适中；行业位置: 同行业21只内 ROEP40、净利P65、营收P45、毛利P20 分位均值45%；行业指标: 毛利率P20、净利率P35、现金流P35 综合29%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">18</span></td><td>sz301511</td><td>德福科技</td><td>电子设备</td><td>449.2</td><td>27.5</td><td><span class="up">+1.42%</span></td><td>210.6</td><td><span class="score-mid">81.0</span></td><td class="reasons">净利同比+580.7%；ROE 6.3%；营收同比+73.5%；EPS 0.42；PE 210.6 偏高；行业位置: 同行业21只内 ROEP50、净利P90、营收P90、毛利P5 分位均值61%；行业指标: 毛利率P5、净利率P25、现金流P5 综合11%；近期公告:德福科技:关于公司部分董事及高级管理人员及合伙企业股份减持计划的预披露公告</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">19</span></td><td>sh600206</td><td>有研新材</td><td>有色金属</td><td>435.8</td><td>36.9</td><td><span class="up">+3.06%</span></td><td>137.1</td><td><span class="score-mid">76.0</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+40.9%；ROE 4.2%；营收同比+50.4%；EPS 0.22；PE 137.1 偏高；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 负债率P50(低优)、现金流P50 综合50%；行业(有色金属)当日候选内平均+3.06%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">20</span></td><td>sh600641</td><td>先导基电</td><td>电子设备</td><td>444.8</td><td>79.6</td><td><span class="up">+9.28%</span></td><td>1060.7</td><td><span class="score-mid">75.7</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:半导体设备/材料/国产芯片/模拟芯片；净利同比+414.9%；ROE 2.5%；营收同比+64.1%；EPS 0.23；PE 1060.7 偏高；行业位置: 同行业21只内 ROEP30、净利P75、营收P75、毛利P35 分位均值53%；行业指标: 毛利率P35、净利率P50、现金流P0 综合29%；近期公告:先导基电:关于《上海先导基电科技股份有限公司股票交易异常波动询证函》的回函</td><td><span class="sell-flag">高位大阳(小阳堆积后见顶)</span></td></tr>
+<tr><td><span class="rank-badge ">21</span></td><td>sz300346</td><td>南大光电</td><td>电子设备</td><td>368.6</td><td>13.1</td><td><span class="up">+0.85%</span></td><td>104.6</td><td><span class="score-mid">75.5</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:半导体设备/材料/国产芯片/模拟芯片；净利同比+23.1%；ROE 7.2%；营收同比+11.4%；EPS 0.37；PE 104.6 偏高；行业位置: 同行业21只内 ROEP60、净利P20、营收P10、毛利P70 分位均值40%；行业指标: 毛利率P70、净利率P75、现金流P45 综合64%；近期公告:南大光电:北京国枫律师事务所关于江苏南大光电材料股份有限公司2026年第二次</td><td><span class="sell-flag">贴近5日线(破位即减)</span></td></tr>
+<tr><td><span class="rank-badge ">22</span></td><td>sz000636</td><td>风华高科</td><td>电子设备</td><td>674.0</td><td>53.9</td><td><span class="up">+1.71%</span></td><td>165.7</td><td><span class="score-mid">75.0</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+74.0%；ROE 2.3%；营收同比+26.3%；EPS 0.25；PE 165.7 偏高；行业位置: 同行业21只内 ROEP25、净利P45、营收P35、毛利P30 分位均值34%；行业指标: 毛利率P30、净利率P40、现金流P30 综合33%；近期公告:风华高科:000636风华高科投资者关系管理信息20260915</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">23</span></td><td>sz301217</td><td>铜冠铜箔</td><td>电子设备</td><td>988.4</td><td>49.8</td><td><span class="up">+4.09%</span></td><td>407.5</td><td><span class="score-mid">73.4</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+514.7%；ROE 3.9%；营收同比+34.2%；EPS 0.26；PE 407.5 偏高；行业位置: 同行业21只内 ROEP35、净利P85、营收P40、毛利P0 分位均值44%；行业指标: 毛利率P0、净利率P30、现金流P10 综合12%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">24</span></td><td>sh605358</td><td>立昂微</td><td>电子设备</td><td>370.9</td><td>20.5</td><td><span class="up">+2.41%</span></td><td>541.0</td><td><span class="score-mid">72.6</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:半导体设备/材料/国产芯片/模拟芯片；净利同比+166.1%；ROE 1.1%；营收同比+25.7%；EPS 0.12；PE 541.0 偏高；行业位置: 同行业21只内 ROEP10、净利P55、营收P30、毛利P10 分位均值28%；行业指标: 毛利率P10、净利率P15、现金流P50 综合24%；近期公告:立昂微:立昂微股东及董事、高级管理人员减持股份结果</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">25</span></td><td>sh603067</td><td>振华股份</td><td>基础化工</td><td>301.1</td><td>17.6</td><td><span class="up">+9.99%</span></td><td>45.0</td><td><span class="score-mid">71.8</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+3.5%；ROE 7.7%；营收同比+28.1%；EPS 0.43；PE 45.0 估值适中；行业位置: 同行业5只内 ROEP75、净利P25、营收P75、毛利P50 分位均值55%；行业指标: 负债率P75(低优)、现金流P25 综合50%；行业(基础化工)当日候选内平均+3.94%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">26</span></td><td>sz002436</td><td>兴森科技</td><td>电子设备</td><td>696.7</td><td>70.7</td><td><span class="up">+3.78%</span></td><td>360.1</td><td><span class="score-mid">70.9</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比+283.3%；ROE 2.0%；营收同比+17.9%；EPS 0.07；PE 360.1 偏高；行业位置: 同行业21只内 ROEP20、净利P70、营收P20、毛利P40 分位均值39%；行业指标: 毛利率P40、净利率P5、现金流P15 综合22%；近期公告:兴森科技:北京观韬(深圳)律师事务所关于深圳市兴森快捷电路科技股份有限公司2</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">27</span></td><td>sz002138</td><td>顺络电子</td><td>电子设备</td><td>418.9</td><td>13.8</td><td><span class="up">+0.57%</span></td><td>44.9</td><td><span class="">67.5</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比-8.0%；ROE 6.8%；营收同比+19.7%；EPS 0.57；PE 44.9 估值适中；行业位置: 同行业21只内 ROEP55、净利P15、营收P25、毛利P65 分位均值39%；行业指标: 毛利率P65、净利率P45、现金流P80 综合64%；近期公告:顺络电子:关于为控股公司提供担保的进展情况公告</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">28</span></td><td>sz300285</td><td>国瓷材料</td><td>基础化工</td><td>588.6</td><td>51.3</td><td><span class="up">+4.23%</span></td><td>107.3</td><td><span class="">66.3</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+9.4%；ROE 5.0%；营收同比+16.6%；EPS 0.37；PE 107.3 偏高；行业位置: 同行业5只内 ROEP25、净利P50、营收P25、毛利P75 分位均值42%；行业指标: 负债率P100(低优)、现金流P100 综合100%；近期公告:国瓷材料:北京天达共和律师事务所关于山东国瓷功能材料股份有限公司2026年第；行业(基础化工)当日候选内平均+3.94%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">29</span></td><td>sh600887</td><td>伊利股份</td><td>食品饮料</td><td>1694.3</td><td>11.1</td><td><span class="up">+0.56%</span></td><td>16.8</td><td><span class="">64.1</span></td><td class="reasons">净利同比-20.0%；ROE 10.1%；营收同比+4.1%；EPS 0.91；PE 16.8 估值适中；市值1694亿 大市值龙头；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50 综合50%；近期公告:伊利股份:内蒙古伊利实业集团股份有限公司关于2023年持股计划(第三期)完成</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">30</span></td><td>sz300759</td><td>康龙化成</td><td>医药生物</td><td>639.3</td><td>24.7</td><td><span class="up">+1.26%</span></td><td>48.3</td><td><span class="">63.9</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:CRO/创新药；净利同比+7.0%；ROE 4.6%；营收同比+17.9%；EPS 0.41；PE 48.3 估值适中；行业位置: 同行业3只内 ROEP50、净利P50、营收P50、毛利P0 分位均值40%；行业指标: 毛利率P0、净利率P0 综合0%；近期公告:康龙化成:关于公司实际控制人的一致行动人部分股份解除质押的公告</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">31</span></td><td>sz300570</td><td>太辰光</td><td>信息技术</td><td>434.7</td><td>30.1</td><td><span class="down">-0.56%</span></td><td>170.2</td><td><span class="">59.7</span></td><td class="reasons">净利同比+1.7%；ROE 9.8%；营收同比+20.8%；EPS 0.78；PE 170.2 偏高；行业位置: 同行业4只内 ROEP33、净利P0、营收P0、毛利P0 分位均值10%；行业指标: 毛利率P0、净利率P33、现金流P33 综合20%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">32</span></td><td>sh600699</td><td>均胜电子</td><td>交运设备</td><td>300.5</td><td>15.7</td><td><span class="up">+3.51%</span></td><td>24.4</td><td><span class="">56.3</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比+4.4%；ROE 4.2%；营收同比-7.4%；EPS 0.48；PE 24.4 估值适中；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%；行业(交运设备)当日候选内平均+3.51%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">33</span></td><td>sh605589</td><td>圣泉集团</td><td>基础化工</td><td>348.8</td><td>12.4</td><td><span class="up">+1.60%</span></td><td>36.6</td><td><span class="">51.2</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比-10.7%；ROE 4.2%；营收同比+13.7%；EPS 0.53；PE 36.6 估值适中；行业位置: 同行业5只内 ROEP0、净利P0、营收P0、毛利P25 分位均值5%；行业指标: 负债率P50(低优)、现金流P0 综合25%；近期公告:圣泉集团:圣泉集团证券投资业务管理制度；行业(基础化工)当日候选内平均+3.94%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">34</span></td><td>sz002821</td><td>凯莱英</td><td>医药生物</td><td>597.9</td><td>11.9</td><td><span class="up">+0.19%</span></td><td>65.5</td><td><span class="">48.1</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:CRO/创新药；净利同比-15.7%；ROE 2.9%；营收同比+13.1%；EPS 1.45；PE 65.5；行业位置: 同行业3只内 ROEP0、净利P0、营收P0、毛利P50 分位均值10%；行业指标: 毛利率P50、净利率P50 综合50%；近期公告:凯莱英:2026年A股限制性股票激励计划首次授予部分登记完成公告(定向增发)</td><td><span class="sell-flag">贴近5日线(破位即减)</span></td></tr>
+<tr><td><span class="rank-badge ">35</span></td><td>sh600667</td><td>太极实业</td><td>建筑</td><td>430.6</td><td>52.3</td><td><span class="up">+3.62%</span></td><td>98.7</td><td><span class="">46.4</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比-3.5%；ROE 3.6%；营收同比-14.9%；EPS 0.15；PE 98.7；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%；近期公告:太极实业:关于累计诉讼、仲裁事项的公告；行业(建筑)当日候选内平均+3.62%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">36</span></td><td>sz001979</td><td>招商蛇口</td><td>房地产</td><td>643.0</td><td>11.7</td><td><span class="down">-0.28%</span></td><td>630.6</td><td><span class="">34.7</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:地产链；净利同比-63.5%；ROE 0.5%；营收同比+6.4%；EPS 0.06；PE 630.6 偏高；行业位置: 同行业3只内 ROEP50、净利P0、营收P100、毛利P100 分位均值55%；行业指标: 负债率P100(低优)、现金流P100 综合100%；近期公告:招商蛇口:招商蛇口董事长授权事项专题会议事细则</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">37</span></td><td>sh603920</td><td>世运电路</td><td>电子设备</td><td>331.2</td><td>13.3</td><td><span class="down">-0.41%</span></td><td>86.3</td><td><span class="">33.8</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比-78.1%；ROE 1.3%；营收同比+16.8%；EPS 0.12；PE 86.3；行业位置: 同行业21只内 ROEP15、净利P5、营收P15、毛利P15 分位均值12%；行业指标: 毛利率P15、净利率P10、现金流P40 综合21%；近期公告:世运电路:2026年9月15日投资者关系活动记录表</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">38</span></td><td>sz002046</td><td>国机精工</td><td>机械设备</td><td>350.4</td><td>12.5</td><td><span class="up">+2.82%</span></td><td>262.7</td><td><span class="">25.4</span></td><td class="reasons"><span class="hot-badge">候选强势行业</span>净利同比-71.9%；ROE 1.1%；营收同比-4.5%；EPS 0.09；PE 262.7 偏高；行业位置: 同行业1只内 ROEP50、净利P50、营收P50、毛利P50 分位均值50%；行业指标: 毛利率P50、净利率P50、现金流P50 综合50%；近期公告:国机精工:光大证券股份有限公司关于国机精工集团股份有限公司向特定对象发行股票；行业(机械设备)当日候选内平均+2.82%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">39</span></td><td>sh600048</td><td>保利发展</td><td>房地产</td><td>675.1</td><td>21.4</td><td><span class="down">-0.70%</span></td><td>-212.7</td><td><span class="">25.3</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:地产链；净利同比-40.8%；ROE 1.0%；营收同比-12.0%；EPS 0.17；PE≤0 亏损/无市盈率；行业位置: 同行业3只内 ROEP100、净利P50、营收P50、毛利P50 分位均值65%；行业指标: 负债率P50(低优)、现金流P50 综合50%；近期公告:保利发展:投资者关系活动记录表-2026年9月15日</td><td><span class="sell-flag">破高反跌</span></td></tr>
+<tr><td><span class="rank-badge ">40</span></td><td>sh600707</td><td>彩虹股份</td><td>电子设备</td><td>351.6</td><td>19.9</td><td><span class="up">+2.62%</span></td><td>1557.9</td><td><span class="">20.0</span></td><td class="reasons">净利同比-77.9%；ROE 0.5%；营收同比-1.8%；EPS 0.03；PE 1557.9 偏高；行业位置: 同行业21只内 ROEP5、净利P10、营收P0、毛利P25 分位均值10%；行业指标: 毛利率P25、净利率P20、现金流P60 综合34%</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">41</span></td><td>sh600330</td><td>天通股份</td><td>电子设备</td><td>369.8</td><td>25.8</td><td><span class="up">+0.91%</span></td><td>-73.9</td><td><span class="">11.7</span></td><td class="reasons"><span class="hot-badge">热点</span>热点题材:PCB/覆铜板；净利同比-636.7%；ROE -3.7%；营收同比+10.8%；EPS -0.23；PE≤0 亏损/无市盈率；行业位置: 同行业21只内 ROEP0、净利P0、营收P5、毛利P45 分位均值10%；行业指标: 毛利率P45、净利率P0、现金流P20 综合24%；近期公告:天通股份:2026年9月18日投资者关系活动记录表</td><td>—</td></tr>
+<tr><td><span class="rank-badge ">42</span></td><td>sz000002</td><td>万  科Ａ</td><td>房地产</td><td>380.8</td><td>42.9</td><td><span class="up">+2.89%</span></td><td>-0.5</td><td><span class="">4.2</span></td><td class="reasons"><span class="hot-badge">热点</span><span class="hot-badge">卖出信号</span>热点题材:地产链；净利同比-25.2%；ROE -13.7%；营收同比-33.4%；EPS -1.25；PE≤0 亏损/无市盈率；行业位置: 同行业3只内 ROEP0、净利P100、营收P0、毛利P0 分位均值30%；行业指标: 负债率P0(低优)、现金流P0 综合0%；近期公告:万科A:A股股票交易异常波动公告</td><td><span class="sell-flag">冲高摸板未封(该上板不上板)</span></td></tr>
 
   </table>
   </div>
-  <div class="note">入选原因含财务（净利/营收同比、ROE、EPS）、业绩预告、近期公告、热点题材叠加、候选强势行业、<b>行业内位置（ROE/净利/营收/毛利分位）与行业特有指标（负债率/现金流/毛利率/净利率）</b>；排名即优先买入顺序（质地分→热点题材→市值/流动性），本表为数据筛选结果，非买入指令，实际买入需再按下方「买入优先排序」规则与低吸买点执行。</div>
+  <div class="note">入选原因含财务（净利/营收同比、ROE、EPS）、业绩预告、近期公告、热点题材叠加、候选强势行业、<b>行业内位置（ROE/净利/营收/毛利分位）与行业特有指标（负债率/现金流/毛利率/净利率）</b>；排名即优先买入顺序（质地分→热点题材→市值/流动性）。<b>卖出标记</b>为课程8大卖点中可自动判定的部分（跌破5/20日线、贴近5日线破位即减、冲高摸板未封、高位大阳、破高反跌），分时类卖点（尾盘猛拉、早冲高午后不过前高等）需人工盯盘；本表为数据筛选结果，非买卖指令。</div>
 </div>
 
 
